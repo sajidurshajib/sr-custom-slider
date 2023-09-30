@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: snow;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sr-slider {
+    margin: 100px auto 0 auto;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+.sr-slider .sr-slider__slides{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.sr-slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position:center;
+    background-size: cover;
+    transition: 500ms;
+}
+
+.sr-slider__dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+.sr-slider__dots > span{
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: block;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sr-slider__dots > .dot-active{
+    background-color: darkslategray;
+}
+
+.sr-slider__nav > button{
+    position: absolute;
+    top: 45%;
+    color: white;
+    background-color: rgba(8, 8, 8, 0.5);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 20px;
+    opacity: 0.3;
+    transition: 100ms;
+}
+.sr-slider__nav > button:nth-child(1){
+    left: 20px;
+}
+.sr-slider__nav > button:nth-child(2){
+    right: 20px;
+}
+.sr-slider:hover .sr-slider__nav > button{
+    opacity: 0.8;
+}
+
+/* slider text  */
+
+.text-wrapper{
+    margin: 220px 100px;
+    background-color: rgba(8, 8, 8, 0.5);
+    display: inline-block;
+    padding: 40px;
+}
+.text-wrapper > h1{
+    color: lightgreen;
+}
+.text-wrapper > h3{
+    color: white;
+}

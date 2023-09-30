@@ -12,7 +12,7 @@ Raw JS Slider is a lightweight and customizable image slider implemented in pure
 
 ### 🚀 Live link
 
-[Netlify live link of this slider.](https://www.google.com)
+[Netlify live link of this slider.](https://lustrous-scone-c9dfed.netlify.app/)
 
 
 Feel free to use this template and customize it further according to your needs! Let me know if you need any more help. 😊
